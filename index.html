@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href ="style.css">
+    <script src="https://kit.fontawesome.com/225b337578.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"> 
+    <div class="container"> 
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sideNav">
+                <li><a href="#header"> Home </a></li>
+                <li><a href="#about"> About </a></li>
+                <li><a href="#services"> Services</a></li>
+                <li><a href="#portfolio"> Portfolio</a></li>
+                <li><a href="#contact"> Contact</a></li>
+                <i class="fas fa-times" onclick="closeSideNav()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openSideNav()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer, Web-Developer</p>
+            <h1> Hi, I'm <span> Komuhangi</span><br> Tumuhairwe from Uganda</h1>
+
+        </div>
+    </div>
+</div>
+<!-- //.............about............ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>I have over time obtained 
+                    invaluable and affluent knowledge in the  ICT/Software sector. 
+                    I’m conversant with software/system documentation, design, 
+                    development and testing. My knowledge also delves into website/application 
+                    development & maintenance, database setup and management, 
+                    I’m also well versed with security in technology.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                    <p class="tab-links" onclick="opentab('education')"> Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul> 
+                        <li> <span>Documentation</span> <br> Requirements gathering</li>
+                        <li> <span>UI/UX</span> <br> Designing web/App interfaces</li>
+                        <li> <span>Web Development</span> <br> Web  app Development</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="experience">
+                    <ul> 
+                        <li> <span>2022-Current</span> <br> Freelance developer</li>
+                        <li> <span>2021-2022</span> <br> Associate Engineer at Asterisk- International</li>
+                        <li> <span>2021-2021</span> <br> Intern at Wimea-ICT lab</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul> 
+                        <li> <span>2023</span> <br> Software Engineering at Makerere University</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- ..................services........... -->
+<div id="services">
+    <div class="container">
+        <h1 class=""sub-title>My Services </h1>
+        <div class="services-list">
+            <div> 
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p> For dynamic and responsive websites, please you can reach out to me</p>
+            <!-- <a href="#"> Learn more</a>     -->
+            </div>
+            <div> 
+                
+              
+                <i class="fa-solid fa-d"></i>
+                <h2> Documentation</h2>
+                <p>To help understand more of the requirements a system should have. 
+                    Clearly documenting each requirement and the technologies to be used on the system </p>
+                <!-- <a href="#"> Learn more</a>     -->
+            </div>
+            <div> 
+                <i class="fa-solid fa-pen-to-square"></i>
+              
+                <h2> UI/UX</h2>
+                <p> Do you want to develop something with your customers in mind, thats a service I can provide. User centered user Interface
+                     design for a better user experience</p>
+                <!-- <a href="#"> Learn more</a>     -->
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ............Portfolio ......... -->
+<div id="portfolio">
+    <div class ="container">
+        <h1 class=""sub-title> My Work </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/code1.jpg">
+                <div class="layer">
+                    <h3>Website development & design</h3>                     
+                    <p>Personal & client websites with thoroughly thought through user designs for better user experience</p>
+                    <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/hsss.jpg">
+                <div class="layer">
+                    <h3>Home safety and security system</h3> 
+                    <p> The system provides remote home intrusion detection and  gas safety measures</p>
+                    <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/transfer.jpg">
+                <div class="layer">
+                    <h3>AIG Uganda</h3> 
+                    <p>A finitech app that allows easy transfer of money beyond borders</p>
+                    <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+        <a href="projects.html" class="btn"> See more</a>
+
+    </div>
+
+</div>
+<!-- ...............contact............ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> ktumuhairwe24@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> +256-782528653</p>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/komuhangi-tumuhairwe"> <i class="fa-brands fa-linkedin"></i>  </a>
+                    <a href="https://github.com/jahielkomu">  <i class="fa-brands fa-github"></i> </a>
+                    <a href="https://instagram.com/tumuhairwe25?igshid=OTk0YzhjMDVlZA=="> <i class="fa-brands fa-instagram"></i> </a>
+
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2"> Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+
+                <span id="msg"></span>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright <script> document.write(new Date().getFullYear())</script> &copy; Komuhangi <i class="fa-solid fa-right-to-bracket"></i> All rights reserved </p>
+    </div>
+
+</div>
+<!-- <script>
+    let Msg = document.getElementById('msg');
+    let response = '';
+    let Name = document.getElementsByName('Name');
+    let Email = document.getElementsByName('Email');
+    let  Message = document.getElementsByName('Message');
+    function showMessage(){
+
+        if (Name !== null || Email !== null || Email !== null){
+           
+        Msg.style.display = "block";
+        }
+
+    }
+
+    // let Msg = document.getElementById('msg');
+    // function showMessage (){
+
+    //     Msg.style.display = "block";
+
+    // }
+
+
+</script> -->
+
+
+
+
+<script>
+    let tablinks = document.getElementsByClassName('tab-links');
+    let tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+
+        event.currentTarget.classList.add('active-link')
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    let sideNav = document.getElementById("sideNav");
+    function openSideNav(){
+        sideNav.style.top = "0";
+    }
+    function closeSideNav(){
+        sideNav.style.top = "-200vh";
+    }
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw2ypq9e8qHT3D7_ejUv0UaPUJtnqH1CuqdwypeqlMraz2Jf0JBN4JU0_4VDm7sscKz9w/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Details submitted successfully"
+        setTimeout(function(){
+            msg.innerHTML =""
+        }, 5000)
+
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+
+
+
+</body>
+</html>
